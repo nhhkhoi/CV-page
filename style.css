@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  background-image: url(https://images.unsplash.com/photo-1516428920238-b4bb6d5827a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+.background {
+  backdrop-filter: blur(5px);
+
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  backdrop-filter: blur(8px);
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.322);
+  padding: 80px 30px 30px 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.name {
+  font-weight: 700;
+  text-transform: Uppercase;
+  color: rgb(83, 63, 40);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.quote {
+  font-family: "La Belle Aurore", cursive;
+  font-size: 25px;
+  text-align: justify;
+  color: white;
+}
+
+.author {
+  text-align: end;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.portrait-half {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.322);
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom: 0;
+  transform: translate(-50%, -100%);
+  width: 160px;
+  height: 80px;
+  backdrop-filter: blur(8px);
+}
+
+.portrait {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-image: url(https://i.ibb.co/7YwQzJk/DSC00333.jpg);
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+
+  border-radius: 50%;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media a {
+  color: #2ecc71;
+}
+
+.card-wrapper {
+  padding-top: 80px;
+}
+
+p > a {
+  color: white;
+}
